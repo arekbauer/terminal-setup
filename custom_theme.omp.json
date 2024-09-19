@@ -1,0 +1,44 @@
+{
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "#91ddff",
+          "foreground": "#100e23",
+          "style": "diamond",
+          "template": " {{ .UserName }} ",
+          "trailing_diamond": "\ue0b0",
+          "type": "session"
+        },
+        {
+          "background": "#ffe9aa",
+          "foreground": "#100e23",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "style": "folder"
+          },
+          "style": "powerline",
+          "template": " \ue5ff {{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "background": "#CCBA88",
+          "foreground": "#100e23",
+          "leading_diamond": "<transparent,background>\ue0b0</>",
+          "properties": {
+            "branch_icon": "",
+            "fetch_upstream_icon": true
+          },
+          "style": "diamond",
+          "trailing_diamond": "\ue0b0",
+          "template": " {{ .UpstreamIcon }}{{ .HEAD }} ",
+          "type": "git"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 2
+}
